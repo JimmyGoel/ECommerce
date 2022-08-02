@@ -33,7 +33,7 @@ namespace ECommerceApi.Serach.Services
                     var option = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
                     var result = JsonSerializer.Deserialize<IEnumerable<Product>>(content, option);
 
-                    return (true, result, null);
+                    return (true, result, "Verified Data");
                 }
                 return (false, null, response.ReasonPhrase);
             }
