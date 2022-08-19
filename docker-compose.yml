@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ecommerceapi.customers:
+    image: ${DOCKER_REGISTRY-}ecommerceapicustomers
+    build:
+      context: .
+      dockerfile: ECommerceApi.Customers\Dockerfile

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ecommerceapi.customers:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
